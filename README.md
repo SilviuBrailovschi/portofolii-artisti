@@ -1,70 +1,63 @@
-# Artist Portfolio
+# Portofolii Artisti
 
-A full-stack application for artists to showcase their portfolios. The application consists of three main components: a NestJS backend API, a React frontend application, and a MySQL database.
+Această aplicație este concepută pentru a facilita prezentarea portofoliilor artistice. Utilizând tehnologiile React pentru frontend și NestJS pentru backend, aplicația oferă o experiență interactivă și eficientă utilizatorilor. Baza de date este gestionată cu MongoDB, asigurând o stocare flexibilă și scalabilă a datelor.
 
-## Table of Contents
+## Continut
 
-- [Prerequisites](#prerequisites)
-- [Setup](#setup)
-    - [MongoDB Database](#mysql-database)
+- [Cerinte preliminare](#prerequisites)
+- [Configurare](#setup)
     - [Backend (NestJS API)](#backend-nestjs-api)
     - [Frontend (React App)](#frontend-react-app)
 - [License](#license)
 
-## Prerequisites
+## Cerinte preliminare
 
 - Node.js and npm
 - Git
 
-## Setup
+## Configurare
 
 ### Backend (NestJS API)
 
-1. Navigate to the `backend` folder:
+1. Navigheaza catre directorul `backend`:
 
     ```bash
     cd path/to/artist-portfolio/backend
     ```
 
-2. Install dependencies:
+2. Instaleaza dependintele:
 
     ```bash
     npm install
     ```
-
-3. Build the application:
-
-    ```bash
-    npm run build
-    ```
-
-4. Run the application:
-
-    ```bash
-    npm run start:dev
-    ```
-
-### Frontend (React App)
-
-1. Navigate to the `frontend` folder:
-
-    ```bash
-    cd path/to/artist-portfolio/frontend
-    ```
-
-2. Install dependencies:
-
-    ```bash
-    npm install
-    ```
-
-3. Start the development server:
+   
+3. Porneste aplicatia:
 
     ```bash
     npm start
     ```
 
-### Access URL : [http://localhost:3000](http://localhost:3000/)
+### Frontend (React App)
 
-## License @TBSilviu
+1. Navigheaza catre directorul `frontend`:
+
+    ```bash
+    cd path/to/artist-portfolio/frontend
+    ```
+
+2. Instaleaza dependintele:
+
+    ```bash
+    npm install
+    ```
+
+3. Porneste serverul aplicatiei:
+
+    ```bash
+    npm start
+    ```
+
+### Link de acces: [http://localhost:3000](http://localhost:3000/)
+
+## Licenta @TBSilviu
 

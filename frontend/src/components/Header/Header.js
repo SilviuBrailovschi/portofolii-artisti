@@ -11,14 +11,21 @@ const Header = () => {
         setIsOpen((prevState) => prevState ? false : true);
     }
 
+    const handleLogo = () => {
+        const userConfirmed = window.confirm("Știam că vei apăsa pe logo! Esti sigur/a ca vrei sa continui ?");
+        if (userConfirmed) {
+            window.open('https://prank-zeta.vercel.app', '_blank');
+        }
+    };
+
     let menuRef = useRef(0);
+
     useEffect(() => {
         let handler = (e) => {
             if(menuRef?.current && !menuRef?.current?.contains(e.target)){
                 setIsOpen(false)
             }
         };
-
         document.addEventListener('mousedown', handler);
         return () => {
             document.removeEventListener('mousedown', handler);
@@ -26,7 +33,7 @@ const Header = () => {
     }, []);
     return (
         <header  className="header" style={{position: 'relative'}}>
-            <div className="logo" style={{position: 'absolute'}}>
+            <div className="logo" onClick={() => handleLogo()} style={{position: 'absolute'}}>
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64" style={{
                     transform: 'scale(.5)',
                     fill: 'rgb(25 120 135 / 80%)'
