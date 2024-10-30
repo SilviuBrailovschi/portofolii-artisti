@@ -1,0 +1,28 @@
+html, body{
+  min-height:100%;
+  overflow: auto;
+}
+
+body{
+  height:100vh;
+}
+.main {
+  position: relative;
+}
+
+.modal-content {
+  background-image: url("../public/addModal.jpg");
+  background-size: contain;
+  color: #003d59!important;
+}
+
+.app{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+p {
+  margin: 0!important;
+}

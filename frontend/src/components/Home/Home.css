@@ -1,0 +1,12 @@
+@media (max-width: 760px) {
+    .home-page {
+        position: absolute;
+        padding: 0!important;
+        max-width: unset!important;
+        height: 80vh!important;
+    }
+    h1 {
+        margin-bottom: unset!important;
+        margin-top: 20px!important;
+    }
+}
